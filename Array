@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class IMS {
+    static void Product(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ByteCrafter99");
+
+        System.out.print("No. of product you want to add in it: ");
+        int max = scanner.nextInt();
+        scanner.nextLine(); 
+
+        String[] products = new String[max];
+
+        for (int j = 0; j < max; j++) {
+            System.out.print("Add your  " + (j + 1) + ": ");
+            products[j] = scanner.nextLine();
+        }
+        System.out.println("You have a list:");
+        for (int j = 0; j < products.length; j++) {
+          System.out.println(products[j]);
+           
+        }
+      
+        scanner.close();
+    }  
+public static void main(String[] args){
+    Product();
+}
+}
